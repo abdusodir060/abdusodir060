@@ -1,47 +1,48 @@
 ### Hi there 👋
+const { app, BrowserWindow } = require('electron')
 
-const { app } = require('electron')
-app.on('window-all-closed', () => {
-  app.quit()
+let progressInterval
+
+const createWindow = () => {
+  const win = new BrowserWindow({
+    width: 800,
+    height: 600
+  })
+
+  win.loadFile('index.html')
+
+  const INCREMENT = 0.03
+  const INTERVAL_DELAY = 100 // ms
+
+  let c = 0
+  progressInterval = setInterval(() => {
+    // update progress bar to next value
+    // values between 0 and 1 will show progress, >1 will show indeterminate or stick at 100%
+    win.setProgressBar(c)
+
+    // increment or reset progress bar
+    if (c < 2) c += INCREMENT
+    else c = 0
+  }, INTERVAL_DELAY)
+}
+
+app.whenReady().then(createWindow)
+
+// before the app is terminated, clear both timers
+app.on('before-quit', () => {
+  clearInterval(progressInterval)
 })
 
-const { app } = require('electron')
-
-app.on('certificate-error', (event, webContents, url, error, certificate, callback) => {
-  if (url === 'https://github.com') {
-    // Verification logic.
-    event.preventDefault()
-    callback(true)
-  } else {
-    callback(false)
+app.on('window-all-closed', () => {
+  if (process.platform !== 'darwin') {
+    app.quit()
   }
 })
 
-const { app } = require('electron')
-
-app.on('select-client-certificate', (event, webContents, url, list, callback) => {
-  event.preventDefault()
-  callback(list[0])
-})
-
-const { app } = require('electron')
-
-app.on('select-client-certificate', (event, webContents, url, list, callback) => {
-  event.preventDefault()
-  callback(list[0])
-})
-
-const { app } = require('electron')
-
-app.on('login', (event, webContents, details, authInfo, callback) => {
-  event.preventDefault()
-  callback('username', 'secret')
-})
-
-const { app } = require('electron')
-
-app.on('session-created', (session) => {
-  console.log(session)
+app.on('activate', () => {
+  if (BrowserWindow.getAllWindows().length === 0) {
+    createWindow()
+  }
 })
   
   <picture>
