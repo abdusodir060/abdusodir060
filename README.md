@@ -1,29 +1,11 @@
 ### Hi there 👋
-<head>
-<script>
-window.nodeRequire = require;
-delete window.require;
-delete window.exports;<head>
-<script>
-window.nodeRequire = require;
-delete window.require;
-delete window.exports;
-delete window.module;
-</script>
-<script type="text/javascript" src="jquery.js"></script>
-</head>
-delete window.module;
-</script>
-<script type="text/javascript" src="jquery.js"></script>
-</head><head>
-<script>
-window.nodeRequire = require;
-delete window.require;
-delete window.exports;
-delete window.module;
-</script>
-<script type="text/javascript" src="jquery.js"></script>
-</head>
+const { BrowserWindow } = require('electron')
+
+const win = new BrowserWindow({ width: 800, height: 1500 })
+win.loadURL('http://github.com')
+
+const contents = win.webContents
+console.log(contents)
   
   <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">
