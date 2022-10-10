@@ -115,6 +115,9 @@ Here are some ideas to get you started:
 
 <h1 align="center">
   <img src="https://raw.githubusercontent.com/martonlederer/martonlederer/master/name.svg" alt="Abdusodir060" />
+	<h2 align="center" class="blue">
+		Abdusodir060
+	</h2>
 </h1>
 
 <details> 
