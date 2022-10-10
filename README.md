@@ -1,11 +1,6 @@
 ### Hi there 👋
 
-[This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
-/assets/images/electrocat.png
-	/../main/assets/images/electrocat.png
-  ../blob/main/assets/images/electrocat.png?raw=true
-  /../../../../github/docs/blob/main/assets/images/electrocat.png
-  ../../../github/docs/blob/main/assets/images/electrocat.png?raw=true
+
   
   <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">
