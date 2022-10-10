@@ -113,6 +113,10 @@ Here are some ideas to get you started:
 - 🌐 𝚈𝚘𝚞 𝚌𝚊𝚗 𝚊𝚌𝚌𝚎𝚜𝚜 
 - 𝚋𝚝𝚠 𝙸 𝚞𝚜𝚎 𝙰𝚛𝚌𝚑 
 
+<h1 align="center">
+  <img src="https://raw.githubusercontent.com/martonlederer/martonlederer/master/name.svg" alt="Abdusodir060" />
+</h1>
+
 <details> 
 <summary>💻 GitHub Profile Stats</summary>
   <br/>
