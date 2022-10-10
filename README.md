@@ -1,11 +1,7 @@
 ### Hi there 👋
-const { BrowserWindow } = require('electron')
-
-const win = new BrowserWindow({ width: 800, height: 1500 })
-win.loadURL('http://github.com')
-
-const contents = win.webContents
-console.log(contents)
+<html>
+<h1>Meu primeiro arquivo em HTML </html>
+</html>
   
   <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/25423296/163456776-7f95b81a-f1ed-45f7-b7ab-8fa810d529fa.png">
